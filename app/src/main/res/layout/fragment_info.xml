@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background">
+
+    <TextView
+        android:id="@+id/titleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Info"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleInfo"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvGingerDuckInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Ginger Duck"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <Button
+                        android:id="@+id/btnGingerDuckViewMoreInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/main_colour"
+                        android:fontFamily="@font/carter_one"
+                        android:text="click to view more"
+                        android:textSize="10sp"
+                        app:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:paddingRight="1dp"
+                        android:text="Ginger duck is a traditional Han Chinese street food. From what local says, it can supplement people with qi which means blood in chinese, and at the same time neutralise the yin in the body."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal|center_vertical"
+                        app:srcCompat="@drawable/gingerduck" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTonganInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Tong'an Fengrou"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <Button
+                        android:id="@+id/btnTonganViewMoreInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#7254D5"
+                        android:fontFamily="@font/carter_one"
+                        android:text="click to view more"
+                        android:textSize="10sp"
+                        app:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:paddingRight="1dp"
+                        android:text="Tong'an fengrou is a local dish in Xiamen. It is from a whole piece of streaky pork that has been sprayed with gravy sauce and steamed to produce a great sensation."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal|center_vertical"
+                        app:srcCompat="@drawable/tonganfengrou" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTusundongInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Tusundong"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <Button
+                        android:id="@+id/btnTusundongViewMoreInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#DF7B7B"
+                        android:fontFamily="@font/carter_one"
+                        android:text="click to view more"
+                        android:textSize="10sp"
+                        app:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:paddingRight="1dp"
+                        android:text="Tusundong is a local snack. It is a cold jelly like snack. It is orginated from Zheng Chenggong when he stationed his troops near the beach during his visit."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal|center_vertical"
+                        app:srcCompat="@drawable/tusundong" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvYuwantangInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Yuwantang Mian"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <Button
+                        android:id="@+id/btnYuwantangViewMoreInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#D8A65D"
+                        android:fontFamily="@font/carter_one"
+                        android:text="click to view more"
+                        android:textSize="10sp"
+                        app:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:paddingRight="1dp"
+                        android:text="Yuwantang Mian is a type of noodle with soap and fish ball made using fresh sliced fish meat. It varies from store to store where some may have fillings inside the fish ball."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal|center_vertical"
+                        app:srcCompat="@drawable/yuwantangmian" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnMoreFoodInfo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/main_colour"
+                android:fontFamily="@font/carter_one"
+                android:text="more food ..."
+                android:textSize="10sp"
+                app:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

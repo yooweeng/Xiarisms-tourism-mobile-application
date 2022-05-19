@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/carter_one"
+            android:paddingLeft="10px"
+            android:paddingTop="10px"
+            android:paddingRight="10px"
+            android:paddingBottom="10px"
+            android:text="Shuzhuang Garden"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Description:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Shuzhuang Garden was built in the year of 1913. It is originally a private villa of the prestigious local squire. However, it was open to public in the year of 1955.&#10;&#10;There consists of two major section in the Shuzhuang Garden, which is the Hidden Sea Garden and the Bushan Garden. In the Hidden Sea Garden, there consist of several facilities in it such as Meishou Hall, Forty-four Bridge and Renqiu Pavilion. In Bushan Garden, there are Hard Stone House , TingchaoPavilion and Twelve Holes. The Twelve Holes are the serial holes that are build following the Chinese tradition and it serve as a playground for children and are also popular for its scene view." />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescription"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Interesting facts"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text='The garden was built following its natural landform, therefore it create a beautiful and nature view for many. It also well known as "garden on the sea and the sea in the garden".' />
+
+        <ImageView
+            android:id="@+id/ivPictureGingerDuck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            app:srcCompat="@drawable/shuzhuanggarden" />
+
+    </RelativeLayout>
+</ScrollView>

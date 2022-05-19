@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnConfirmValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="86dp"
+        android:backgroundTint="@color/main_colour"
+        android:fontFamily="@font/carter_one"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="143dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="XIARISMS&#10;Email Validation"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvErrorEmailValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="287dp"
+        android:fontFamily="@font/carter_one"
+        android:text="wrong email address"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailValidate" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Please validate your email address"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailValidate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleRegister" />
+
+    <EditText
+        android:id="@+id/etEmailValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:fontFamily="@font/carter_one"
+        android:hint="user email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvErrorEmailValidate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

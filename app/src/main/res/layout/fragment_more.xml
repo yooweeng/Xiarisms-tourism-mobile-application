@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/more_background">
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+    <TextView
+        android:id="@+id/tvUsernameMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivProfilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-107dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Username"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvUsernameMore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-52dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvProfileTitle"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-103dp"
+        android:background="@drawable/more_items_background"
+        android:fontFamily="@font/carter_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Edit Profile"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvEditProfile"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-80dp"
+        android:background="@drawable/more_items_background"
+        android:fontFamily="@font/carter_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Change Password"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvChangePassword"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="-80dp"
+        android:background="@drawable/more_items_background"
+        android:fontFamily="@font/carter_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Logout"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="&#169; copyright SWE1904867" />
+
+</RelativeLayout>

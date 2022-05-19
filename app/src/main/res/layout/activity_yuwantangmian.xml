@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/carter_one"
+            android:paddingLeft="10px"
+            android:paddingTop="10px"
+            android:paddingRight="10px"
+            android:paddingBottom="10px"
+            android:text="Yuwantang Mian"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/yuwantangmian" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Description:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Yuwantang Mian is a type of noodle with soup and fish ball made using fresh sliced fish meat. It varies from store to store where some may have fillings inside the fish ball. After the water is boiled, some vegatables and aroma ingredients with noodle will be added into the soup before served. Some people will also add peppers or cooking wines into the soup to diversify the flavour.&#10;&#10;The fish balls are usually soft in texture and sweet with rich seafood flavour. Yuwantang Mian is popular in Xiamen as the ingredients is easy to be prepared and the steps to make it is simple. It’s be considered as home-cooked cuisine in China, you are also able to find this dish in many restaurant." />
+
+        <Button
+            android:id="@+id/btnDetailYuwantang"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/main_colour"
+            android:fontFamily="@font/carter_one"
+            android:text="more details ..."
+            android:textSize="10sp"
+            app:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+</ScrollView>

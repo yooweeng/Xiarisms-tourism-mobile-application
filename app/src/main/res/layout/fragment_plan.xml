@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background">
+
+    <TextView
+        android:id="@+id/tvtitlePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Plan"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDisplayPlan"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_below="@id/tvtitlePlan"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnAddPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvDisplayPlan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/main_colour"
+        android:fontFamily="@font/carter_one"
+        android:text="add" />
+
+</RelativeLayout>

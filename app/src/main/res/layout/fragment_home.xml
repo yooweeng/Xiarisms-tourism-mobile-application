@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background">
+
+    <TextView
+        android:id="@+id/tvUsernameHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvHelloMsgHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvUsernameHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Good day, hope you have a wonderful day!" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsvAttractionHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvHelloMsgHome"
+        android:layout_marginBottom="-345dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHakkaEarthBuildingHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="1"
+                    app:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Hakka Earth Building"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Hakka Earth Building also known as Hakka Tulou is an unique style building that are usually round in building shape and built using natural material such as sand and clay."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal"
+                        app:layout_rowSpan="2"
+                        app:srcCompat="@drawable/hakkaearthbuilding" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvShuzhuangGardenHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="1"
+                    app:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Shuzhuang Garden"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Shuzhuang Garden was built in the year of 1913. It is originally a private villa of the prestigious local squire. However, it was open to public in the year of 1955."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal"
+                        app:layout_rowSpan="2"
+                        app:srcCompat="@drawable/shuzhuanggarden" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvWuyuanwanWetlandHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="1"
+                    app:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Wuyuanwan Wetland Park"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:text="The wetland park is maze of a boardwalk built near the wetlands surrounding by the sea. It located near Xiamen Aquatic Park, which is also notable for a visit."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal"
+                        app:layout_rowSpan="2"
+                        app:srcCompat="@drawable/wuyuanwanwetland" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvZhongshanStreet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:outlineSpotShadowColor="@color/main_colour"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    app:columnCount="1"
+                    app:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Zhongshan Street"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionHome"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Zhongshan Road Walking Street is the centre of Xiamen tourism. This is where many of the tourist and visitors frequently visited and one of the hottest attractions in Xiamen."
+                        android:textSize="12sp"
+                        app:layout_gravity="center_horizontal|center_vertical" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="160dp"
+                        android:layout_height="130dp"
+                        app:layout_gravity="center_horizontal"
+                        app:layout_rowSpan="2"
+                        app:srcCompat="@drawable/zhongshanstreet" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvStoryTitleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvHelloMsgHome"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-365dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Can click here to view the details"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civHakkaEarthHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tvStoryTitleHome"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-85dp"
+        android:src="@drawable/hakkaearthbuilding">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civShuzhuangHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tvStoryTitleHome"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="-85dp"
+        android:src="@drawable/shuzhuanggarden">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civWetlandHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tvStoryTitleHome"
+        android:layout_marginLeft="210dp"
+        android:layout_marginBottom="-85dp"
+        android:src="@drawable/wuyuanwanwetland">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civZhongshanStreet"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/tvStoryTitleHome"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="-85dp"
+        android:src="@drawable/zhongshanstreet">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civHakkaEarthHome"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Hakka Earth" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civHakkaEarthHome"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Shuzhuang&#10;    Garden" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civHakkaEarthHome"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Wuyuanwan&#10;    Wetland" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civHakkaEarthHome"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Zhongshan&#10;      Street" />
+
+</RelativeLayout>

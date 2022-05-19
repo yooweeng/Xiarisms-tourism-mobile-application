@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="@color/main_colour"
+        android:fontFamily="@font/carter_one"
+        android:text="login&#10;here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkSignup" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="112dp"
+        android:fontFamily="@font/carter_one"
+        android:text="XIARISMS"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:fontFamily="@font/carter_one"
+        android:hint="user email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvErrorEmailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvErrorEmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/carter_one"
+        android:text="wrong email or password"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegister" />
+
+    <EditText
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="69dp"
+        android:ems="10"
+        android:fontFamily="@font/carter_one"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/tvErrorReenterPasswordRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorEmailRegister" />
+
+    <TextView
+        android:id="@+id/tvErrorReenterPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/carter_one"
+        android:text="wrong email or password"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toTopOf="@+id/linkSignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordRegister" />
+
+    <TextView
+        android:id="@+id/linkSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="121dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Didn't have an account? Sign up"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorReenterPasswordRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

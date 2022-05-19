@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:fontFamily="@font/carter_one"
+            android:paddingLeft="10px"
+            android:paddingTop="10px"
+            android:paddingRight="10px"
+            android:paddingBottom="10px"
+            android:text="Tusundong - Sand Worm Jelly"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/textView4"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/tusundong" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView1"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Description:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:fontFamily="@font/carter_one"
+            android:text="Tusundong is a local snack. It is a cold jelly like snack. It is orginated from Zheng Chenggong when he stationed his troops near the beach during his visit. There are also different saying that says Qi JiGuang (a Chinese military general and writer of the Ming dynasty) is the founder of this dish. The food is made from boiling of gelatins which will dissolved into the jelly form and it is then cold, freeze and store for eat. Garlic, vinegar and also soy sauce will also being added as seasoning. It tastes better with sauce and chili. Many people will make it during spring and winter." />
+
+        <Button
+            android:id="@+id/btnDetailTusundong"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/main_colour"
+            android:fontFamily="@font/carter_one"
+            android:text="more details ..."
+            android:textSize="10sp"
+            app:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+</ScrollView>

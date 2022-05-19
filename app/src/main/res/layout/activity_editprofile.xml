@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_profile_background">
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:srcCompat="@drawable/ic_baseline_person_pin_24" />
+
+    <TextView
+        android:id="@+id/tvUsernameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivProfilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-107dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Username"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvUsernameEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-52dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvEmailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvProfileTitle"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-90dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etEmailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvEmailEdit"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="-50dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/carter_one"
+        android:hint="user email"
+        android:inputType="textPersonName"
+        android:textColor="#72777A" />
+
+    <TextView
+        android:id="@+id/tvPasswordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/etEmailEdit"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-35dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etPasswordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPasswordEdit"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:fontFamily="@font/carter_one"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnEditProfileEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/etPasswordEdit"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="-90dp"
+        android:backgroundTint="@color/main_colour"
+        android:fontFamily="@font/carter_one"
+        android:text="Edit Profile" />
+
+    <Button
+        android:id="@+id/btnRemoveAccountEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEditProfileEdit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/carter_one"
+        android:text="remove account"
+        android:textSize="10sp"
+        app:layout_gravity="center_horizontal" />
+
+</RelativeLayout>
